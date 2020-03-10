@@ -13,7 +13,7 @@ namespace dotnet_rpg.Services.CharacterService
             new Character { Id = 1, Name = "Sam" }
         };
 
-        public async Task<ServiceResponse<List<Character>>> AddCharacter(Character newCharacter)
+        public async Task<ServiceResponse<List<Character>>> AddCharacter(AddCharacterDto newCharacter)
         {
             ServiceResponse<List<Character>> serviceReponse = new ServiceResponse<List<Character>>();
 

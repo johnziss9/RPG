@@ -30,7 +30,7 @@ namespace dotnet_rpg.Controllers
         }
 
         [HttpPost]
-        public async Task<IActionResult> AddCharacter(Character newCharacter)
+        public async Task<IActionResult> AddCharacter(AddCharacterDto newCharacter)
         {
             return Ok(await _characterService.AddCharacter(newCharacter));
         }
